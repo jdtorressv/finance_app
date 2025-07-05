@@ -2,9 +2,14 @@ import React from 'react'
 import './Card.css'
 import Loki from '../../Loki_Resting.png'
 
-type Props = {}
+interface Props {
+  // Define any props if needed
+  companyName: string;
+  ticker: string;
+  price: number;
+}
 
-const Card = (props: Props) => {
+const Card = ({companyName, ticker, price}: Props) => {
   return (
     <div className='card'>
         <img 
@@ -12,8 +17,8 @@ const Card = (props: Props) => {
         alt='AAPL image'
         />
         <div className='details'>
-            <h2>AAPL</h2>
-            <p>$110</p>
+            <h2>{companyName} ({ticker})</h2>
+            <p>${price}</p>
         </div>
         <p className='info'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, nihil.</p>
     </div>
