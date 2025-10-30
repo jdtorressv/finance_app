@@ -20,7 +20,7 @@ const Card: React.FC<Props> = ({id, searchResult}: Props) : JSX.Element  => {
             <p>${searchResult.currency}</p>
         </div>
         <p className='info'>
-          {searchResult.exchangeFullName} - {searchResult.Exchange}
+          {searchResult.exchangeFullName} - {searchResult.exchange}
         </p>
     </div>
   )

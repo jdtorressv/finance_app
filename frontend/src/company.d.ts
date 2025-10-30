@@ -2,7 +2,7 @@ export interface CompanySearch {
   currency: string;
   exchangeFullName: string;
   name: string;
-  Exchange: string;
+  exchange: string;
   symbol: string;
 }
 
